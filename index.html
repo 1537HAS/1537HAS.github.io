@@ -3,94 +3,102 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Personal academic homepage of Aoshen Huang, PhD student working on robot learning, robotic manipulation, and dexterous manipulation." />
-  <title>Aoshen Huang</title>
+  <meta name="description" content="Aoshen Huang (黄奥申) — PhD student researching robot learning, robotic manipulation, and dexterous manipulation." />
+  <meta name="color-scheme" content="light" />
+  <title>Aoshen Huang · Robotics</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="page">
-    <header class="profile">
-      <img class="avatar" src="https://avatars.githubusercontent.com/u/128670813?v=4" alt="Aoshen Huang" />
-      <div>
-        <h1>Aoshen Huang</h1>
-        <p class="name-cn">黄奥申</p>
-        <p class="role">PhD Student · Robotics</p>
-        <p class="links">
-          <a href="mailto:aoshenhuang@gmail.com">Email</a>
-          <span>/</span>
-          <a href="https://github.com/1537HAS">GitHub</a>
-        </p>
-      </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="page">
+    <header class="site-header">
+      <a class="site-name" href="#about">Aoshen Huang</a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
 
-    <section>
-      <h2>About</h2>
-      <p>
-        I am a PhD student interested in robot learning, robotic manipulation,
-        and dexterous manipulation. My research focuses on enabling robots to
-        acquire robust manipulation skills from demonstrations, simulation, and
-        embodied interaction.
-      </p>
-      <p>
-        I am especially interested in reusable manipulation skills that can
-        generalize across objects, scenes, and robotic platforms.
-      </p>
-    </section>
-
-    <section>
-      <h2>Research Interests</h2>
-      <ul>
-        <li>Robot learning and visuomotor policy learning</li>
-        <li>Robotic manipulation and contact-rich tasks</li>
-        <li>Dexterous manipulation with robotic hands</li>
-        <li>Imitation learning, reinforcement learning, and sim-to-real systems</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-      <div class="entry">
-        <h3>Dexterous Robot Manipulation</h3>
-        <p>
-          Learning-based dexterous manipulation with robotic hands, with an
-          emphasis on perception, contact, and policy learning.
+    <main id="main">
+      <section class="intro" id="about" aria-labelledby="name">
+        <p class="eyebrow">PhD Student · Robotics</p>
+        <h1 id="name">Aoshen Huang <span class="name-cn" lang="zh-Hans">黄奥申</span></h1>
+        <p class="intro-lead">
+          I study how robots learn to interact with the physical world.
         </p>
-      </div>
-      <div class="entry">
-        <h3>Imitation Learning for Robots</h3>
-        <p>
-          Methods for transferring human demonstrations and motion references
-          into executable robot behaviors.
-        </p>
-      </div>
-      <div class="entry">
-        <h3>Sim-to-Real Robot Systems</h3>
-        <p>
-          Practical pipelines for training policies in simulation and deploying
-          them on real robotic systems.
-        </p>
-      </div>
-    </section>
+        <div class="bio">
+          <p>
+            I am a PhD student interested in <strong>robot learning</strong>,
+            <strong>robotic manipulation</strong>, and <strong>dexterous manipulation</strong>.
+            My research focuses on enabling robots to acquire robust manipulation
+            skills from demonstrations, simulation, and embodied interaction.
+          </p>
+          <p>
+            I am especially interested in reusable manipulation skills that
+            generalize across objects, scenes, and robotic platforms.
+          </p>
+        </div>
+        <ul class="profile-links" aria-label="Profile links">
+          <li><a href="mailto:aoshenhuang@gmail.com">Email <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://github.com/1537HAS">GitHub <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Publications</h2>
-      <p class="muted">
-        Publications will be added here.
-      </p>
-    </section>
+      <section class="section-row" id="research" aria-labelledby="research-heading">
+        <div class="section-label">
+          <h2 id="research-heading">Research</h2>
+          <p>Directions &amp; interests</p>
+        </div>
+        <div class="section-content">
+          <ul class="research-list">
+            <li>
+              <h3>Dexterous manipulation</h3>
+              <p>
+                Learning-based manipulation with robotic hands, with an emphasis
+                on perception, contact-rich interaction, and policy learning.
+              </p>
+            </li>
+            <li>
+              <h3>Learning from demonstrations</h3>
+              <p>
+                Transferring human demonstrations and motion references into
+                executable robot behaviors through imitation and visuomotor learning.
+              </p>
+            </li>
+            <li>
+              <h3>Simulation to the real world</h3>
+              <p>
+                Training policies in simulation and deploying them on real robotic
+                systems, using reinforcement learning and sim-to-real methods.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    <section>
-      <h2>Contact</h2>
-      <p>
-        I am happy to discuss robot learning, robotic manipulation, dexterous
-        hands, and embodied AI.
-      </p>
-      <p>Email: <a href="mailto:aoshenhuang@gmail.com">aoshenhuang@gmail.com</a></p>
-    </section>
+      <!-- Add a Publications section here when publication details are available. -->
 
-    <footer>
-      <p>Last updated: 2026</p>
+      <section class="section-row contact" id="contact" aria-labelledby="contact-heading">
+        <div class="section-label">
+          <h2 id="contact-heading">Contact</h2>
+          <p>Get in touch</p>
+        </div>
+        <div class="section-content">
+          <p>
+            I am happy to discuss robot learning, robotic manipulation,
+            dexterous hands, and embodied AI.
+          </p>
+          <a class="email-link" href="mailto:aoshenhuang@gmail.com">aoshenhuang@gmail.com <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Aoshen Huang <span lang="zh-Hans">黄奥申</span></span>
+      <a href="https://github.com/1537HAS/1537HAS.github.io">Source on GitHub <span aria-hidden="true">↗</span></a>
     </footer>
-  </main>
+  </div>
 </body>
 </html>

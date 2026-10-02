@@ -1,15 +1,35 @@
-# 1537has.github.io
+# Aoshen Huang — academic homepage
 
-Personal academic homepage for Aoshen Huang.
+A minimal, responsive academic homepage, published at
+[1537has.github.io](https://1537has.github.io/).
 
-## Deploy with GitHub Pages
+## Editing
 
-1. Create a GitHub repository named `1537has.github.io`.
-2. Upload `index.html` and `style.css` to the repository root.
-3. In repository settings, enable GitHub Pages from the main branch if it is not enabled automatically.
-4. Visit `https://1537has.github.io`.
+- `index.html`: biography, research interests, and contact links.
+- `style.css`: typography, spacing, colors, mobile layout, and print styles.
+- Add a Publications section at the marked comment in `index.html` when details are available.
 
-## Edit
+The site is plain HTML and CSS. It has no JavaScript, build tools, web fonts,
+analytics, or third-party widgets.
 
-- Main content: `index.html`
-- Visual style: `style.css`
+## Local preview
+
+From the repository root, run:
+
+```sh
+python3 -m http.server 8000
+```
+
+Then open `http://localhost:8000`.
+
+## Deployment
+
+GitHub Pages serves the root of the `main` branch. Changes pushed to `main`
+are published by the existing Pages deployment.
+
+## Design references
+
+The layout takes inspiration from the content-first approach of
+[Jon Barron's academic website](https://jonbarron.info/) and
+[al-folio](https://github.com/alshedivat/al-folio).
+The HTML and CSS are written specifically for this site.
